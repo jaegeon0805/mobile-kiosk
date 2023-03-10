@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### Configuration ###
-application-prod.yml
+application.yml
