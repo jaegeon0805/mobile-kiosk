@@ -24,6 +24,13 @@ jobs:
 
       - name: Create Application.yml
         run: |
+          ls
+          cd src
+          ls
+          cd main
+          ls
+          cd resources
+          ls
           touch ./src/main/resources/application.yml
           echo "${{ secrets.APPLICATION }}" > ./src/main/resources/application.yml
 
