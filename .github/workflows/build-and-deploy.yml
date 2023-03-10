@@ -2,7 +2,7 @@ name: build-and-deploy
 
 on:
   push:
-    branches: [ "feature/deploy" ]
+    branches: [ "prod" ]
 
 permissions:
   contents: read
@@ -33,7 +33,7 @@ jobs:
       - name: Build with Gradle
         uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
         with:
-          arguments: build -x test -Dspring.profiles.active=default
+          arguments: build -x test -Dspring.profiles.active=${{ github.ref_name }}
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
