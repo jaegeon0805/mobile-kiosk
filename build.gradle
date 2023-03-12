@@ -37,6 +37,14 @@ jar {
     enabled = false
 }
 
+task copyPrivate(type: Copy) {
+    copy {
+        from './mobile-kiosk-yml'
+        include "*.yml"
+        into 'src/main/resources'
+    }
+}
+
 spotless {
     java {
         removeUnusedImports()
