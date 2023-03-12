@@ -1,0 +1,4 @@
+[submodule "mobile-kiosk-yml"]
+	path = mobile-kiosk-yml
+	url = https://github.com/jaegeon0805/mobile-kiosk-yml.git
+	branch = main
