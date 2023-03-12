@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### Configuration ###
-application.yml
+src/main/resources/application.yml
