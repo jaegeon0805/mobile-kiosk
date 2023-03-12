@@ -7,7 +7,7 @@ function find_idle_profile() {
 
   # 현재 프로필 찾기
   if [ ${RESPONSE_CODE} -ge 400 ]; then
-    CURRENT_PROFILE=deploy2
+    CURRENT_PROFILE="deploy2"
   else
     CURRENT_PROFILE=$(curl -s http://localhost/profile)
   fi
